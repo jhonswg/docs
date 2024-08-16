@@ -6,7 +6,7 @@ const config: DocsThemeConfig = {
   logo: (
     <div style={{ display: 'flex', alignItems: 'center' }}>
       <Image src="/logo/logo-jhonswg.png" alt="Logo" width={25} height={25} />
-      <span style={{ fontWeight:'bold', fontStyle:'18px' }}>Jhonswg Service</span>
+      <span style={{ fontWeight:'bold', fontSize:'18px' }}>Jhonswg Service</span>
     </div>
   ),
   project: {
