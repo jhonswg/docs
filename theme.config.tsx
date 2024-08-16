@@ -8,18 +8,29 @@ const config: DocsThemeConfig = {
   },
   chat: {
     link: 'https://discord.com',
-    icon: (
-      <>
-        <a href="https://twitter.com/jhonswgeth" target="_blank" rel="noopener noreferrer">
-          <img src="/path-to-twitter-icon.svg" alt="Twitter" style={{ marginLeft: 8 }} />
-        </a>
-      </>
-    ),
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
     text: 'Nextra Docs Template',
   },
+  // Tambahkan ini
+  navs: [
+    {
+      name: "GitHub",
+      url: "https://github.com/shuding/nextra-docs-template",
+      icon: <img src="/path-to-github-icon.svg" alt="GitHub" />
+    },
+    {
+      name: "Discord",
+      url: "https://discord.com",
+      icon: <img src="/path-to-discord-icon.svg" alt="Discord" />
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/yourtwitterhandle",
+      icon: <img src="/path-to-twitter-icon.svg" alt="Twitter" />
+    }
+  ],
 }
 
 export default config
