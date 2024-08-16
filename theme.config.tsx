@@ -4,7 +4,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>My Project</span>,
   project: {
-    link: 'https://github.com/shuding/jhonswg',
+    link: 'https://github.com/jhonswg',
   },
   chat: {
     link: 'https://discord.com/jhonswg',
