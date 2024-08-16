@@ -1,8 +1,14 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import Image from 'next/image'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: (
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <Image src="/logo/logo-jhonswg.png" alt="Logo" width={25} height={25} />
+      <span style={{ fontWeight:'bold', fontStyle:'18px' }}>Jhonswg Service</span>
+    </div>
+  ),
   project: {
     link: 'https://github.com/jhonswg',
   },
@@ -13,7 +19,6 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
-  // Tambahkan konfigurasi untuk Twitter menggunakan navbar
   navbar: {
     extraContent: (
       <a href="https://x.com/jhonswgeth" target="_blank" rel="noopener noreferrer" className="nx-p-2 nx-text-current">
