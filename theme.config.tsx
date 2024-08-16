@@ -6,18 +6,18 @@ const config: DocsThemeConfig = {
   logo: (
     <div style={{ display: 'flex', alignItems: 'center' }}>
       <Image src="https://jhonswg.com/assets/img/logo.png" alt="Logo" width={25} height={25} unoptimized/>
-      <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px' }}>Jhonswg Service</span>
+      <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px' }}>Jhonswg Services</span>
     </div>
   ),
   project: {
     link: 'https://github.com/jhonswg',
   },
   chat: {
-    link: 'https://discord.com/jhonswg',
+    link: 'https://discordapp.com/users/847151330807382067',
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Jhonswg Services',
   },
   navbar: {
     extraContent: (
