@@ -1,14 +1,14 @@
 ---
 
-title: Welcome
+title: Introduction
 
 description: This is the official documentation for Chainflip, a cross-chain decentralised exchange, based on a proof-of-stake validator network, that uses highly efficient threshold signing schemes and a unique AMM design to offer users a maximally efficient and low friction method to trade digital assets in a totally decentralised system.
 
 ---
 
-# Welcome to Jhonswg Services 
+# Introduction 
 
-![Welcome](https://jhonswg.com/assets/img/logo.png)
+![Welcome](/logo/NewBanner.png)
 
 <br />
 
