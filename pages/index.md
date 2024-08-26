@@ -8,7 +8,7 @@ description: This is the official documentation for Chainflip, a cross-chain dec
 
 # Introduction 
 
-![Welcome](/logo/NewBanner.png)
+![Welcome](/pages/Image/NewBanner.png)
 
 <br />
 
