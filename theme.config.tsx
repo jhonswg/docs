@@ -1,24 +1,34 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from "next/router";
 import Image from 'next/image'
 
+
+
 const config: DocsThemeConfig = {
+  head: () => {
+    {
+      const { asPath } = useRouter();
+      const url = `https://docs.chainflip.io${asPath}`;
+      return (
+        <>
+          <link rel="icon" href="https://jhonswg.com/assets/img/logo.png" sizes="any" />
+          <meta property="og:url" content={url} />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:image"
+            content="https://docs.chainflip.io/chainfliplogo.png"
+          />
+        </>
+      );
+    }
+  },
   logo: (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div style={{ display: 'flex', alignItems: 'left' }}>
       <Image src="https://jhonswg.com/assets/img/logo.png" alt="Logo" width={25} height={25} unoptimized/>
       <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px' }}>Jhonswg Services</span>
     </div>
   ),
-  project: {
-    link: 'https://github.com/jhonswg',
-  },
-  chat: {
-    link: 'https://discordapp.com/users/847151330807382067',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
-  footer: {
-    text: 'Jhonswg Services',
-  },
   navbar: {
     extraContent: (
       <a href="https://x.com/jhonswgeth" target="_blank" rel="noopener noreferrer" className="nx-p-2 nx-text-current">
@@ -27,6 +37,21 @@ const config: DocsThemeConfig = {
         </svg>
       </a>
     )
+  },
+  project: {
+    link: 'https://github.com/jhonswg',
+  },
+  chat: {
+    link: 'https://discordapp.com/users/847151330807382067',
+  },
+  footer: {
+    text: 'Jhonswg Services',
+  },
+
+  useNextSeoProps: () => {
+    return {
+      titleTemplate: "Jhonswg - %s",
+    };
   },
 }
 

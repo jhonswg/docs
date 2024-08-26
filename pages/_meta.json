@@ -1,15 +1,27 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "--- separator1": {
+    "title": "Introduction",
+    "type": "separator"
   },
-  "contact": {
-    "title": "Contact ↗",
+  
+  "index": "Home",
+  "about": "About",
+  "--- separator2": {
+    "title": "Services",
+    "type": "separator"
+  
+  },
+  "Website": {
+    "title": "Website ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href":"https://jhonswg.com",
+    "newWindow": true
+  },
+  "Explorer": {
+    "title": "Explorer ↗",
+    "type": "page",
+    "href": "https://explorer.jhonswg.com",
     "newWindow": true
   }
+
 }
