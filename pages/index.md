@@ -12,4 +12,7 @@ description: This is the official documentation for Chainflip, a cross-chain dec
 
 <br />
 
-Jhonswg Node a trusted validator and inter-chain utility provider, we provide easy steps to delegate funds or explore our services. Our node runners are committed, enthusiastic, and thrifty in operating nodes for blockchain projects, always up to date with industry developments, and eager to contribute to the advancement of blockchain technology through efficient node operations.
+* Website    : Https://jhonswg.com 
+* Telegram   : https://t.me/jhonswg
+* Discord    : https://discord.com/users/847151330807382067
+* X          : https://twitter.com/jhonswgeth
