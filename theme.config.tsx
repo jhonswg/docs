@@ -25,8 +25,8 @@ const config: DocsThemeConfig = {
   },
   logo: (
     <div style={{ display: 'flex', alignItems: 'left' }}>
-      <Image src="https://jhonswg.com/assets/img/logo.png" alt="Logo" width={25} height={25} unoptimized/>
-      <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px' }}>Jhonswg Services</span>
+      <Image src="https://jhonswg.com/assets/img/logo.png" alt="Logo" width={40} height={20} unoptimized/>
+      <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px', alignContent:'center' }}>Services</span>
     </div>
   ),
   navbar: {
