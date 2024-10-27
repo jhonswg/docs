@@ -34,13 +34,6 @@ export default {
 
   feedback: false,  // menghilangkan "Question? Give us feedback"
   editLink: false,  // menghilangkan "Edit this page"
-  // feedback: {
-  //   content: 'Question? Give us feedback →',
-  //   useLink: () => 'https://github.com/yourusername/your-repo/issues'
-  // },
-  // editLink: {
-  //   text: 'Edit this page'
-  // },
   useNextSeoProps: () => {
     return {
       titleTemplate: "Jhonswg - %s",
