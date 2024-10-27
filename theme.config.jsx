@@ -2,34 +2,18 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from "next/router";
 import Image from 'next/image'
+import { useConfig } from 'nextra-theme-docs'
+import { Mail } from 'lucide-react'
 
 
 
-const config: DocsThemeConfig = {
-  head: () => {
-    {
-      const { asPath } = useRouter();
-      const url = `https://docs.chainflip.io${asPath}`;
-      return (
-        <>
-          <link rel="icon" href="https://jhonswg.com/assets/img/logo.png" sizes="any" />
-          <meta property="og:url" content={url} />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content="https://docs.chainflip.io/chainfliplogo.png"
-          />
-        </>
-      );
-    }
-  },
+export default {
   logo: (
     <div style={{ display: 'flex', alignItems: 'left' }}>
-      <Image src="https://jhonswg.com/assets/img/logo.png" alt="Logo" width={40} height={20} unoptimized/>
-      <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px', alignContent:'center' }}>Services</span>
+      <Image src="/logo/logo.png" alt="Jhonswg Logo" width={40} height={20} unoptimized/>
+      <span style={{ marginLeft: '0.5rem',fontWeight:'bold', fontSize:'18px', alignContent:'center',color: '#10B981' }}>Services</span>
     </div>
-  ),
-  navbar: {
+  ),navbar: {
     extraContent: (
       <a href="https://x.com/jhonswgeth" target="_blank" rel="noopener noreferrer" className="nx-p-2 nx-text-current">
         <svg width="24" height="24" viewBox="0 0 24 24">
@@ -44,15 +28,22 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discordapp.com/users/847151330807382067',
   },
-  footer: {
+  footer:{
     text: 'Jhonswg Services',
-  },
+  } , 
 
+  feedback: false,  // menghilangkan "Question? Give us feedback"
+  editLink: false,  // menghilangkan "Edit this page"
+  // feedback: {
+  //   content: 'Question? Give us feedback →',
+  //   useLink: () => 'https://github.com/yourusername/your-repo/issues'
+  // },
+  // editLink: {
+  //   text: 'Edit this page'
+  // },
   useNextSeoProps: () => {
     return {
       titleTemplate: "Jhonswg - %s",
     };
   },
 }
-
-export default config
