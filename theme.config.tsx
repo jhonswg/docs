@@ -8,7 +8,6 @@ import { Mail } from 'lucide-react'
 import Head from 'next/head';
 
 const config: DocsThemeConfig = {
-  favicon: '/logo/favicon.ico',
   project: {
     link: 'https://github.com/jhonswg/docs'
   },
