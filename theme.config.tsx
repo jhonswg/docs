@@ -4,8 +4,16 @@ import { useRouter } from "next/router";
 import Image from 'next/image'
 import { useConfig } from 'nextra-theme-docs'
 import { Mail } from 'lucide-react'
+// import {Footer} from './components/footer'
+import Head from 'next/head';
 
-
+const config: DocsThemeConfig = {
+  favicon: '/logo/favicon.ico',
+  project: {
+    link: 'https://github.com/jhonswg/docs'
+  },
+  docsRepositoryBase: 'https://github.com/jhonswg/docs/blob/main/',
+}
 
 export default {
   logo: (
@@ -31,7 +39,7 @@ export default {
   footer:{
     text: 'Jhonswg Services',
   } , 
-
+  
   feedback: false,  // menghilangkan "Question? Give us feedback"
   editLink: false,  // menghilangkan "Edit this page"
   useNextSeoProps: () => {
