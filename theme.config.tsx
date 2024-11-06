@@ -131,8 +131,9 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
-  feedback: false, // menghilangkan "Question? Give us feedback"
-  editLink: false,  // menghilangkan "Edit this page"
+   feedback: false, // menghilangkan "Question? Give us feedback"
+   editLink: false,  // menghilangkan "Edit this page"
+
   useNextSeoProps: () => {
     return {
       titleTemplate: "Jhonswg Docs - %s",
