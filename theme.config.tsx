@@ -70,6 +70,7 @@ import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 import NewWindow from "./icons/NewWIndow";
 
+
 const logoStyle = {
   display: "flex",
   alignItems: "center",
@@ -78,6 +79,10 @@ const logoStyle = {
 };
 
 const config: DocsThemeConfig = {
+ 
+};
+
+export default {
   head: () => {
     {
       const { asPath } = useRouter();
@@ -95,6 +100,8 @@ const config: DocsThemeConfig = {
       );
     }
   },
+  feedback: false, // Menonaktifkan fitur feedback
+  editLink: false, // Menonaktifkan "Edit this page" link
   logo: (
     <div style={logoStyle}>
       <img height="40" width="40" src="/logo/logo.png" />
@@ -131,14 +138,9 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
-   feedback: false, // menghilangkan "Question? Give us feedback"
-   editLink: false,  // menghilangkan "Edit this page"
-
   useNextSeoProps: () => {
     return {
       titleTemplate: "Jhonswg Docs - %s",
     };
   },
-};
-
-export default config;
+}
